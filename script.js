@@ -1,2 +1,2 @@
 let city=prompt("What city are you from");
-let name=Prompt();
+let name=Prompt("What");
