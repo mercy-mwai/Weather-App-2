@@ -18,6 +18,11 @@ let weather={
         temp: 18.7,
         humidity: 24,
         wind: 13,
+    },
+    nairobi: {
+        temp: 22.3,
+        humidity: 23,
+        wind: 16,
     }
 }
 let city=prompt("Enter a city?");
@@ -28,4 +33,11 @@ if(weather[city] !== undefined){
     let wind=weather[city].wind;
     let celsiusTemperature = Math.round(temperature);
     let fahrenheitTemperature = Math.round((temperature * 9) / 5 + 32);
-}
+    alert(
+        `It is currently ${celsiusTemperature}°C (${fahrenheitTemperature}°F) in ${city} with a humidity of ${humidity}%`
+      );
+    } else {
+      alert(
+        `Sorry we don't know the weather for this city, try going to https://www.google.com/search?q=weather+${city}`
+      );
+    }
