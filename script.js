@@ -40,4 +40,13 @@ if(weather[city] !== undefined){
       alert(
         `Sorry we don't know the weather for this city, try going to https://www.google.com/search?q=weather+${city}`
       );
+    };
+    
+    l
+    
+    function contactBtn(){
+        event.preventDefault();
+        let cityInput=document.querySelector('search-input').value;
+        let currentCity=document.querySelector('current-details');
+        currentCity.innerHTML=cityInput.value;      
     }
