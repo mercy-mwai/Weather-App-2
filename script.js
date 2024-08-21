@@ -49,4 +49,5 @@ if(weather[city] !== undefined){
         let cityInput=document.querySelector('search-input').value;
         let currentCity=document.querySelector('current-details');
         currentCity.innerHTML=cityInput.value;      
-    }
+    };
+    
