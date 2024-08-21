@@ -6,4 +6,6 @@
         currentCity.innerHTML=cityInput;      
     };
     let searchButton=document.querySelector('.search-button');
-    searchButton.addEventListener("click", contactBtn)
+    searchButton.addEventListener("click", contactBtn);
+    
+    let currentDay=["Monday","Tuesday","Wednesday", "Thursday", "Friday", "Sturday","Sunday"];
