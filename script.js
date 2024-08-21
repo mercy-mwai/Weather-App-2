@@ -9,3 +9,4 @@
     searchButton.addEventListener("click", contactBtn);
     
     let currentDay=["Monday","Tuesday","Wednesday", "Thursday", "Friday", "Sturday","Sunday"];
+    
