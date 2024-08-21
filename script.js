@@ -1,9 +1,9 @@
     
-    function contactBtn(){
+    function contactBtn(event){
         event.preventDefault();
-        let cityInput=document.querySelector('search-input').value;
-        let currentCity=document.querySelector('current-details');
-        currentCity.innerHTML=cityInput.value;      
+        let cityInput=document.querySelector('.search-input').value;
+        let currentCity=document.querySelector('.current-city');
+        currentCity.innerHTML=cityInput;      
     };
-    let searchInput=document.querySelector('search-input');
-    searchInput.addEventListener("click", contactBtn)
+    let searchButton=document.querySelector('search-button');
+    searchButton.addEventListener("click", contactBtn)
