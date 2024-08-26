@@ -8,6 +8,12 @@
     let searchButton=document.querySelector('.search-button');
     searchButton.addEventListener("click", contactBtn);
     
-    let currentDay=["Monday","Tuesday","Wednesday", "Thursday", "Friday", "Sturday","Sunday"];
-    let currentDate=new Date();
-    
+    function currentDayOfWeek(){
+        let date=new Date();  
+        let DaysOfWeek=["Monday","Tuesday","Wednesday", "Thursday", "Friday", "Sturday","Sunday"];
+        let dayName = daysOfWeek[date.getDay()];
+        let hours=date.getHours();
+        let minutes=date.getMinutes(); 
+        const formattedTime = `${dayName} ${hours}:${minutes}`;
+             
+    };
