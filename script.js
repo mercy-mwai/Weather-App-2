@@ -1,4 +1,3 @@
-    
     function contactBtn(event){
         event.preventDefault();
         let cityInput=document.querySelector('.search-input').value;
