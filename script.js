@@ -8,10 +8,9 @@
     searchButton.addEventListener("click", contactBtn);
     
     function currentDayOfWeek(){ 
-        let DaysOfWeek=["Monday","Tuesday","Wednesday", "Thursday", "Friday", "Sturday","Sunday"];
-        let dayName = daysOfWeek[date.getDay()];
         let hours=date.getHours();
         let minutes=date.getMinutes(); 
+        let day=date.getDay();
         if (minutes < 10) {
             minutes = `0${minutes}`;
           }
@@ -19,10 +18,11 @@
           if (hours < 10) {
             hours = `0${hours}`;
           }
-        
-        return `${dayName}:${hours}:${minutes}`;
+          let DaysOfWeek=["Monday","Tuesday","Wednesday", "Thursday", "Friday", "Saturday","Sunday"];
+          let formattedDay=DaysOfWeek[day];
+          return `${formattedDay} ${hours}:${minutes}`;
              
     };
-    let currentDateElement=document.getElementById('current-date');
+    let currentDateElement=document.getElementById('#current-date');
     let currentDate=new Date();
     currentDateELement.innerHTML = currentDayOfWeek(currentDate);
