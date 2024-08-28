@@ -26,3 +26,15 @@
     let currentDateElement=document.getElementById('current-date');
     let currentDate=new Date();
     currentDateElement.innerHTML = currentDayOfWeek(currentDate);
+
+function displayCurrentTemperature(response){
+console.log(response);
+let temperature= Math.round(response.data.temperature.current);
+let tempElement=document.querySelector('.current-temperature-value');
+tempElement.innerHTML= temperature;
+}
+let country="paris";
+let apiKey='ataf73cb6640fo53e168b11f0d6bb9e4';
+let apiUrl=`https://api.shecodes.io/weather/v1/current?query=${country}&key=${apiKey}`;
+
+axios.get(apiUrl).then(displayCurrentTemperature);
