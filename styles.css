@@ -72,11 +72,9 @@ body {
   }
   
   .weather-icon{
-    /*position: relative;
-    top: -8px;*/
     display: inline-block;
     font-size: 40px;
-    margin-right: none;
+    margin-right: 10px;
     vertical-align: middle;
   }
   
