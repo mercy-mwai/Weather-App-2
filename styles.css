@@ -71,16 +71,20 @@ body {
     color: #f65282;
   }
   
-  .current-temperature-icon {
-    position: relative;
-    top: -8px;
+  .weather-icon{
+    /*position: relative;
+    top: -8px;*/
+    display: inline-block;
     font-size: 40px;
-    margin-right: 10px;
+    margin-right: none;
+    vertical-align: middle;
   }
   
   .current-temperature-value {
+    display: inline-block;
     font-size: 80px;
     font-weight: bold;
+    vertical-align: middle;
   }
   
   .current-temperature-unit {
