@@ -31,7 +31,7 @@ function formatDate(date) {
   if (hours < 10) {
     hours = `0${hours}`;
   }
-
+  
   let days = [
     "Sunday",
     "Monday",
